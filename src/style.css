@@ -1,4 +1,5 @@
 body {
+  background: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -36,13 +37,13 @@ p {
 
 .scores > .header button {
   background: transparent;
-  border: 2px solid rgb(85, 85, 85);
-  box-shadow: 3px 3px 1px;
+  border: 2px solid rgba(14, 8, 184, 0.46);
+  border-radius: 3px;
   padding: 5px 10px;
 }
 
 .scores > .score-board {
-  border: 1px solid #ccc;
+  border: 2px solid rgba(14, 8, 184, 0.46);
 }
 
 .scores > .score-board > ul {
@@ -56,7 +57,7 @@ p {
 }
 
 .scores > .score-board > ul li:nth-of-type(even) {
-  background: rgb(224, 224, 224);
+  background: rgba(14, 8, 184, 0.225);
 }
 
 .form {
@@ -71,8 +72,8 @@ p {
 
 .form .submit button {
   background: transparent;
-  border: 2px solid rgb(85, 85, 85);
-  box-shadow: 3px 3px 1px;
+  border: 2px solid rgba(14, 8, 184, 0.46);
+  border-radius: 3px;
   padding: 5px 10px;
 }
 
@@ -85,4 +86,6 @@ p {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  border: 2px solid rgba(14, 8, 184, 0.46);
+  border-radius: 3px;
 }
