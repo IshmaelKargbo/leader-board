@@ -1,49 +1,49 @@
-import axios from 'axios';
-
 class LeaderBoard {
   constructor() {
     this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
     this.game = localStorage.getItem('game') || null;
   }
 
-    newGame = async (name) => {
-      this.game = await axios.post(`${this.baseURL}`, { name })
-        .then((response) => {
-          const { result } = response.data;
-          const game = result.slice(14, 34);
-          localStorage.setItem('game', game);
-          return game;
-        })
-        .catch((error) => {
-          throw new Error(error);
-        });
-    }
+  newGame = async (name) => {
+    this.game = await fetch(`${this.baseURL}`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+      }),
+    })
+      .then((res) => res.json())
+      .then(({ result }) => {
+        const game = result.slice(14, 34);
+        localStorage.setItem('game', game);
+        return game;
+      })
+  }
 
-    createScore = async ({ name, score }) => {
-      await axios.post(`${this.baseURL}${this.game}/scores/`, {
+  createScore = async ({ name, score }) => {
+    await fetch(`${this.baseURL}${this.game}/scores/`, {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
         user: name,
-        score,
-      }).then((response) => {
-        const { result } = response.data;
-        return result;
-      }).catch((error) => {
-        throw new Error(error);
-      });
-    }
+        score: score,
+      }),
+    })
+  }
 
-    allScores = async () => {
-      if (!this.game) await this.newGame('FPL');
+  allScores = async () => {
+    if (!this.game) await this.newGame('FPL');
 
-      const scores = await axios.get(`${this.baseURL}${this.game}/scores/`)
-        .then((response) => {
-          const { result } = response.data;
-          return result;
-        }).catch((error) => {
-          throw new Error(error);
-        });
+    const scores = fetch(`${this.baseURL}${this.game}/scores/`)
+      .then((res) => res.json())
+      .then((res) => res.result);
 
-      return scores;
-    }
+    return scores;
+  }
 }
 
 export default new LeaderBoard();

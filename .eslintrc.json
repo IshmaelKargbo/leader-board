@@ -22,10 +22,7 @@
         "js": "always",
         "json": "always"
       }
-    ],
-    "import/no-named-as-default": 0,
-    "import/prefer-default-export": "off",
-    "import/no-cycle": "off"
+    ]
   },
   "ignorePatterns": [
     "dist/",
