@@ -1,8 +1,6 @@
 import axios from 'axios';
 
 class LeaderBoard {
-    game = null;
-
     constructor() {
       this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
       this.game = localStorage.getItem('game') || null;
