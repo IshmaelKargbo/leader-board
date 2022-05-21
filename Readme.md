@@ -3,15 +3,16 @@
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 #### App Screenshot
-<!-- <img src="./app_screenshot.png" alt="Leader Board" /> -->
+<img src="./app_screenshot.png" alt="Leader Board" />
 
-<!-- ### Live Demo
-<a href="https://ishmaelkargbo.github.io/todo-list">Leader Board</a> -->
+### Live Demo
+<a href="https://ishmaelkargbo.github.io/leader-board">Leader Board</a>
 
 ## Built With
 
 - HTML and CSS
 - ESLint
+- Axios
 - Webpack
 - JavaScript
 
@@ -42,7 +43,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/IshmaelKargbo/todo-list/issues).
+Feel free to check the [issues page](https://github.com/IshmaelKargbo/leader-board/issues).
 
 ## Show your support
 

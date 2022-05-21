@@ -1,0 +1,42 @@
+{
+  "name": "leader-board",
+  "version": "1.0.0",
+  "description": "The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "dev": "webpack --mode development",
+    "test": "jest --coverage",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshmaelKargbo/leader-board.git"
+  },
+  "keywords": [],
+  "author": "Ishmael Kargbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IshmaelKargbo/leader-board/issues"
+  },
+  "homepage": "https://github.com/IshmaelKargbo/leader-board#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.1.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {}
+}

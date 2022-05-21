@@ -1,0 +1,108 @@
+body {
+  background: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: black;
+  box-sizing: border-box;
+  font-family: Roboto, "Courier New", Courier, monospace;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.board {
+  display: flex;
+  padding-top: 10px;
+}
+
+.scores {
+  width: 60%;
+  padding: 0 30px;
+}
+
+.scores > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scores > .header button {
+  background: transparent;
+  border: 2px solid rgba(14, 8, 184, 0.46);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.scores > .score-board {
+  border: 2px solid rgba(14, 8, 184, 0.46);
+}
+
+.scores > .score-board > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.scores > .score-board > ul li {
+  padding: 10px;
+}
+
+.board-state {
+  padding: 10px;
+  text-align: center;
+}
+
+.scores > .score-board > ul li:nth-of-type(even) {
+  background: rgba(14, 8, 184, 0.225);
+}
+
+.form {
+  width: 40%;
+  padding-left: 30px;
+}
+
+.form .submit {
+  display: flex;
+  justify-content: end;
+}
+
+.form .submit button {
+  background: transparent;
+  border: 2px solid rgba(14, 8, 184, 0.46);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.form .form-col {
+  width: 100%;
+  display: flex;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(14, 8, 184, 0.46);
+  border-radius: 3px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+#form-load {
+  display: none;
+}
+
+.error {
+  border-color: red !important;
+}
