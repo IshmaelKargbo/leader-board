@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 class LeaderBoard {
-    constructor() {
-      this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-      this.game = localStorage.getItem('game') || null;
-    }
+  constructor() {
+    this.baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+    this.game = localStorage.getItem('game') || null;
+  }
 
     newGame = async (name) => {
       this.game = await axios.post(`${this.baseURL}`, { name })
