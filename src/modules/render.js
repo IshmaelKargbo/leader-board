@@ -1,19 +1,19 @@
 const board = document.getElementById('board');
 
 export const renderScore = (scores) => {
-    scores.forEach((score) => {
-        const liScore = document.createElement('li');
+  scores.forEach((score) => {
+    const liScore = document.createElement('li');
 
-        const pTag = document.createElement('p');
+    const pTag = document.createElement('p');
 
-        pTag.innerText = `${score.user}: ${score.score}`;
+    pTag.innerText = `${score.user}: ${score.score}`;
 
-        liScore.appendChild(pTag);
+    liScore.appendChild(pTag);
 
-        board.appendChild(liScore);
-    });
-}
+    board.appendChild(liScore);
+  });
+};
 
 export const loadState = () => {
-    board.innerHTML = '';
-}
+  board.innerHTML = '';
+};
