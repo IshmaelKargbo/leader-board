@@ -6,12 +6,12 @@ class LeaderBoard {
 
   newGame = async (name) => {
     this.game = await fetch(`${this.baseURL}`, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-type": "application/json",
+        'Content-type': 'application/json',
       },
       body: JSON.stringify({
-        name: name,
+        name,
       }),
     })
       .then((res) => res.json())
@@ -19,20 +19,20 @@ class LeaderBoard {
         const game = result.slice(14, 34);
         localStorage.setItem('game', game);
         return game;
-      })
+      });
   }
 
   createScore = async ({ name, score }) => {
     await fetch(`${this.baseURL}${this.game}/scores/`, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-type": "application/json",
+        'Content-type': 'application/json',
       },
       body: JSON.stringify({
         user: name,
-        score: score,
+        score,
       }),
-    })
+    });
   }
 
   allScores = async () => {
