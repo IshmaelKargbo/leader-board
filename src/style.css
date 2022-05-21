@@ -1,9 +1,9 @@
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(13, 6, 50);
   margin: 0;
   padding: 0;
   font-size: 15px;
-  color: black;
+  color: rgb(210, 210, 210);
   box-sizing: border-box;
   font-family: Roboto, "Courier New", Courier, monospace;
 }
@@ -21,29 +21,29 @@ p {
 
 .board {
   display: flex;
-  padding-top: 10px;
+  padding: 80px;
+  border: 4px dashed #fff;
 }
 
 .scores {
   width: 60%;
-  padding: 0 30px;
+  padding-right: 30px;
 }
 
 .scores > .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 2px;
 }
 
 .scores > .header button {
   background: transparent;
-  border: 2px solid rgba(14, 8, 184, 0.46);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 3px;
+  color: white;
   padding: 5px 10px;
-}
-
-.scores > .score-board {
-  border: 2px solid rgba(14, 8, 184, 0.46);
 }
 
 .scores > .score-board > ul {
@@ -62,7 +62,7 @@ p {
 }
 
 .scores > .score-board > ul li:nth-of-type(even) {
-  background: rgba(14, 8, 184, 0.225);
+  background: rgba(255, 255, 255, 0.043);
 }
 
 .form {
@@ -77,8 +77,9 @@ p {
 
 .form .submit button {
   background: transparent;
-  border: 2px solid rgba(14, 8, 184, 0.46);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 3px;
+  color: white;
   padding: 5px 10px;
 }
 
@@ -91,8 +92,10 @@ p {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 2px solid rgba(14, 8, 184, 0.46);
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 3px;
+  color: white;
 }
 
 .form input:focus {
