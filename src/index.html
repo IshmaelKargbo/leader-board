@@ -17,38 +17,25 @@
         <div class="header">
           <h2>Recent scores</h2>
           <div>
-            <button class="referesh">Referesh</button>
+            <button class="referesh" id="refresh">Refresh</button>
           </div>
         </div>
         <div class="score-board">
-          <ul>
-            <li>
-              <p>Name: 100</p>
-            </li>
-            <li>
-              <p>Name: 50</p>
-            </li>
-            <li>
-              <p>Name: 75</p>
-            </li>
-            <li>
-              <p>Name: 22</p>
-            </li>
-            <li>
-              <p>Name: 39</p>
-            </li>
+          <ul id="board">
           </ul>
+          <p id="board-state" class="board-state">Loading . . .</p>
         </div>
       </div>
       <div class="form">
         <h2>Add your score</h2>
-        <form action="#">
+        <form id="form">
           <div class="form-col">
             <input type="text" name="name" placeholder="Your name">
           </div>
           <div class="form-col">
-            <input type="number" name="secore" placeholder="Your score">
+            <input type="number" name="score" placeholder="Your score">
           </div>
+          <p id="form-load">Loading . . . </p>
           <div class="submit">
             <button type="submit">Submit</button>
           </div>
@@ -56,7 +43,6 @@
       </div>
     </div>
   </main>
-  <script src="./index.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 - HTML and CSS
 - ESLint
+- Axios
 - Webpack
 - JavaScript
 

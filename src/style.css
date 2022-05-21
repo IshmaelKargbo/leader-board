@@ -56,6 +56,11 @@ p {
   padding: 10px;
 }
 
+.board-state {
+  padding: 10px;
+  text-align: center;
+}
+
 .scores > .score-board > ul li:nth-of-type(even) {
   background: rgba(14, 8, 184, 0.225);
 }
@@ -88,4 +93,16 @@ p {
   margin-bottom: 20px;
   border: 2px solid rgba(14, 8, 184, 0.46);
   border-radius: 3px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+#form-load {
+  display: none;
+}
+
+.error {
+  border-color: red !important;
 }
